@@ -38,11 +38,11 @@ const AlbumDetail = ({ data }) => {
 
     return (
       <Card className="border-0">
-        <Row className="albumDetail border">
-          <Col sm={4} className="h-100 px-0">
+        <Row className="albumDetail">
+          <Col sm={4} className="detail-height h-100 px-0">
             <Card.Img variant="top" src={data.tracks.data[0].album.cover_medium} />
           </Col>
-          <Col sm={8} className="h-100 px-0 o-50" >
+          <Col sm={8} className="detail-height h-100 px-0 o-50" >
             <Card className="border-0 h-100 text-white">
               <Card.Img src={data.tracks.data[0].album.cover_medium} alt="Card image"/>
               <Card.ImgOverlay className="bg-gradient">

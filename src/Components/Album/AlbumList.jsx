@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Card, Spinner } from 'react-bootstrap'
+import { Container,Row, Col, Card, Spinner } from 'react-bootstrap'
 import { FaPlay, FaPause } from "react-icons/fa";
 
 const AlbumList = ({ data }) => {
@@ -54,6 +54,7 @@ const AlbumList = ({ data }) => {
 
 
   return (
+    <Container fluid>
     <Row className="row-cols-1 row-cols-md-5 g-4">
       {data.tracks.data.map(item => (
         <Col key={item.id}>
@@ -73,6 +74,7 @@ const AlbumList = ({ data }) => {
       ))}
 
     </Row>
+    </Container>
   )
 }
 

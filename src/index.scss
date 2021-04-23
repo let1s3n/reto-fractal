@@ -115,3 +115,15 @@ img.card-img-top{
 .multiline{
   white-space: pre;
 }
+
+
+
+@media (max-width: 576px) { 
+  .albumDetail{
+    height:500px;
+  }
+
+  .detail-height{
+    height:50% !important;
+  }
+}
